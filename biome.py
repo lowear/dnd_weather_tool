@@ -7,11 +7,11 @@ class Biome():
     def __init__(self, name, allowable_weathers, base_temp, base_humidity):
         """This function defines the spicific biome type
 
-        args: 
+        args:
             name (str): the name of the biome type
             allowable_weathers (list(weather)): types of weather that could occur
             base_temp (int): temperature of biome in celcius
-            base_humidity (int): humidity of the hex in percentage 
+            base_humidity (int): humidity of the hex in percentage
 
 
         returns:
@@ -42,4 +42,3 @@ class Biome():
 if __name__ == '__main__':
     test_hex = Biome("mountain", "list", 20, 50)
     test_hex.apply_weather_modifier("rain")
-    
