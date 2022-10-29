@@ -14,4 +14,4 @@ Daddy Lowe <br />
 <br />
 xx
 
-This is a very toughing note, and I'm thankful for the assistance in creating a random tool for an extremely niche use case
+This is a very touching note, and I'm thankful for the assistance in creating a random tool for an extremely niche use case
