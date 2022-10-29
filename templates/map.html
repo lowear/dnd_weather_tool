@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+<!-- Set the title for the page tab -->
+{% block title %}Map{% endblock title %}
+
+<!-- Main page content -->
+{% block content %}
+
+    <img src="{{ url_for('static', filename='World Map.jpg') }}" class="map">
+
+{% endblock content %}
