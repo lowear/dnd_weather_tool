@@ -1,0 +1,51 @@
+#examples {
+    background: none;
+    height: 460px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+  
+  #examples:after,
+  #examples:before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    background: none;
+    height: 16px;
+    z-index: 2;
+  }
+  
+  #examples-deep {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  #examples svg,
+  #examples canvas {
+    position: absolute;
+  }
+  
+  /* Set the border colour of the hexagons */
+  .example-mesh {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+  }
+  
+  .example-anchor path {
+    fill: none;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  /* Set border colour of selected hexagon */
+  .example-anchor path:hover {
+    stroke: #000;
+    stroke-width: 2px;
+  }
