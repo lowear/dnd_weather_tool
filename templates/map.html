@@ -6,6 +6,11 @@
 <!-- Main page content -->
 {% block content %}
 
+    <!-- Image of world map -->
     <img src="{{ url_for('static', filename='World Map.jpg') }}" class="map">
+
+    <!-- Hex grid -->
+    <canvas id="canvas"></canvas>
+    <script src="{{ url_for('static', filename='hexgrid.js') }}"></script>
 
 {% endblock content %}
