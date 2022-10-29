@@ -2,6 +2,7 @@
 
 
 class Hex():
+    """Defines the paramaters inside a weather hex"""
 
     def __init__(self, x_coord, y_coord, biome):
         """ This function creates a new hex object
@@ -14,8 +15,8 @@ class Hex():
         Returns:
             (Hex): Initialised hex object
         """
-        self.x = x_coord
-        self.y = y_coord
+        self.horizontal = x_coord
+        self.vertical = y_coord
         self.biome = biome
         self.weather = None
         self.weather_duration = 0
