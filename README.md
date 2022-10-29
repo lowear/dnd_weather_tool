@@ -20,5 +20,3 @@ This is a very touching note, and I'm thankful for the assistance in creating a 
 TEST
 
 TEST2
-
-TEST3
