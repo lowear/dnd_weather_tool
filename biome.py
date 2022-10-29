@@ -4,7 +4,7 @@
 class Biome():
     """Defines table of weather types and midifiers"""
 
-    def __init__(self, name, allowable_weathers, base_temp, base_humidity):
+    def __init__(self, name, allowable_weathers, base_temp, base_humidity, current_temperature, current_humidity):
         """This function defines the spicific biome type
 
         args:
@@ -17,12 +17,12 @@ class Biome():
         returns:
             (Biome): Initialised Biome object
         """
-        self.name = None
-        self.allowable_weathers = None
-        self.base_temp = None
-        self.base_humidity = None
-        self.current_temperature = None
-        self.current_humidity = None
+        self.name = name
+        self.allowable_weathers = allowable_weathers
+        self.base_temp = base_temp
+        self.base_humidity = base_humidity
+        self.current_temperature = current_temperature
+        self.current_humidity = current_humidity
 
     def apply_weather_modifier(self, weather):
         """This function applies the weather modifiers from selected weather
