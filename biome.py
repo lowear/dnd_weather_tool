@@ -12,6 +12,8 @@ class Biome():
             allowable_weathers (list(weather)): types of weather that could occur
             base_temp (int): temperature of biome in celcius
             base_humidity (int): humidity of the hex in percentage
+            current_temperature(int): current temperature of the hex
+            current_humidity(int): current humidity of the hex
 
 
         returns:
@@ -40,5 +42,5 @@ class Biome():
 
 
 if __name__ == '__main__':
-    test_hex = Biome("mountain", "list", 20, 50)
+    test_hex = Biome("mountain", "list", 20, 50, 30, 50)
     test_hex.apply_weather_modifier("rain")
