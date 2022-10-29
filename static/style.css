@@ -1,3 +1,9 @@
+/* Custom CSS for Dungeons & Drizzle project */
+
+canvas {
+    width: 100%;
+}
+
 .map {
     max-width: 100%;
 }
