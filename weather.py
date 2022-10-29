@@ -18,12 +18,12 @@ class Weather():
             (Weather) = returns list of allowable weathers
             """
         
-        self.name = None
-        self.min_duration = None
-        self.max_duration = None
-        self.temp_modifier = None
-        self.humidity_modifier = None
-        self.icon_filepath = None
+        self.name = name
+        self.min_duration = min_duration
+        self.max_duration = max_duration
+        self.temp_modifier = temp_modifier
+        self.humidity_modifier = humidity_modifier
+        self.icon_filepath = icon_filepath
 
         raise NotImplementedError
 

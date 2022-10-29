@@ -30,6 +30,19 @@ class Hex():
         Returns:
             (float): The humidity of the hex
         """
+    
+    def get_temperature(self):
+        """ This function calculates the humidity of the hex
+        
+        Args:
+            None
+            
+        Returns:
+            (float): The temperature of the hex
+        """
+    
+    def remaining_duration(self):
+        """how long is left of the current weather in the selected hex"""
         raise NotImplementedError
 
 
