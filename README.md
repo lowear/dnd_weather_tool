@@ -1,4 +1,4 @@
-# dnd_weather_tool
+# Dungeons & Drizzle
 A nerdy tool that generates map weather for Gareth's even nerdier DnD campaigns.
 
 ## A note to my dearest friend, Gareth Onee-Chan
