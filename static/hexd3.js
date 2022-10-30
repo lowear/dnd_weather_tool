@@ -101,14 +101,14 @@ var data = [
     {title: "Parallel Sets", url: "https://www.jasondavies.com/parallel-sets/"}
 ];
 
-data.forEach(function(d, i) {
-  d.i = i % 10;
-  d.j = i / 10 | 0;
-});
+// data.forEach(function(d, i) {
+//   d.i = i % 10;
+//   d.j = i / 10 | 0;
+// });
 
-var height = 460, // THIS BIT SETS THE HEIGHT OF THE HEX GRID! ****************
+var height = 700, // THIS BIT SETS THE HEIGHT OF THE HEX GRID! ****************
     radius = 50,  // THIS BIT TOGGLES THE HEX SIZE! ***************************
-    depth = 4;
+    depth = 4;  // default 4?
 
 var currentFocus = [innerWidth / 2, height / 2],
     desiredFocus,
@@ -157,18 +157,24 @@ function drawImage(d) {
 }
 
 function resized() {
+
   var deepWidth = innerWidth * (depth + 1) / depth,
       deepHeight = height * (depth + 1) / depth,
-      centers = hexbin.size([deepWidth, deepHeight]).centers();
+    //   centers = hexbin.size([deepWidth, deepHeight]).centers();
+      centers = hexbin.size([innerWidth, height]).centers();
 
   desiredFocus = [innerWidth / 2, height / 2];
   moved();
 
   graphic
-      .style("left", Math.round((innerWidth - deepWidth) / 2) + "px")
-      .style("top", Math.round((height - deepHeight) / 2) + "px")
-      .attr("width", deepWidth)
-      .attr("height", deepHeight);
+    //   .style("left", Math.round((innerWidth - deepWidth) / 2) + "px")
+    //   .style("top", Math.round((height - deepHeight) / 2) + "px")
+    //   .attr("width", deepWidth)
+    //   .attr("height", deepHeight);
+      .style("left", "0px")
+      .style("top", "0px")
+      .attr("width", innerWidth)
+      .attr("height", height);
 
   centers.forEach(function(center, i) {
     center.j = Math.round(center[1] / (radius * 1.5));

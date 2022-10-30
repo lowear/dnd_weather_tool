@@ -1,9 +1,19 @@
+/* Colour Variables */
+:root {
+    --outline-colour: #ccc;
+    --outline-weight: 1px;
+    --hover-colour: #111;
+    --hover-weight: 3px;
+}
+
 #examples {
     background: none;
-    height: 460px;
+    height: 700px;
     overflow: hidden;
     padding: 0;
     position: relative;
+    border-bottom: solid var(--outline-weight) var(--outline-colour);
+    border-top: solid var(--outline-weight) var(--outline-colour);
   }
   
   #examples:after,
@@ -34,8 +44,8 @@
   /* Set the border colour of the hexagons */
   .example-mesh {
     fill: none;
-    stroke: #ccc;
-    stroke-width: 1px;
+    stroke: var(--outline-colour);
+    stroke-width: var(--outline-weight);
   }
   
   .example-anchor path {
@@ -46,6 +56,6 @@
   
   /* Set border colour of selected hexagon */
   .example-anchor path:hover {
-    stroke: #000;
-    stroke-width: 2px;
+    stroke: var(--hover-colour);
+    stroke-width: var(--hover-weight);
   }
