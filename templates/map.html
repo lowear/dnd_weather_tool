@@ -3,14 +3,25 @@
 <!-- Set the title for the page tab -->
 {% block title %}Map{% endblock title %}
 
+<!-- Custom Map CSS -->
+{% block header %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='hex.css') }}" >
+{% endblock header %}
+
 <!-- Main page content -->
 {% block content %}
 
-    <!-- Image of world map -->
-    <img src="{{ url_for('static', filename='World Map.jpg') }}" class="map">
+    <!-- D3 Javascript CDN -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
 
     <!-- Hex grid -->
-    <canvas id="canvas"></canvas>
-    <script src="{{ url_for('static', filename='hexgrid.js') }}"></script>
+    <div id="examples">
+        <div id="examples-deep"></div>
+    </div>
+    <script src="{{ url_for('static', filename='hexd3.js') }}"></script>
+
+    <!-- Image of world map -->
+    <img src="{{ url_for('static', filename='World Map.jpg') }}" class="map">
 
 {% endblock content %}

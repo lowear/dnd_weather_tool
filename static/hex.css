@@ -1,0 +1,61 @@
+/* Colour Variables */
+:root {
+    --outline-colour: #ccc;
+    --outline-weight: 1px;
+    --hover-colour: #111;
+    --hover-weight: 3px;
+}
+
+#examples {
+    background: none;
+    height: 700px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    border-bottom: solid var(--outline-weight) var(--outline-colour);
+    border-top: solid var(--outline-weight) var(--outline-colour);
+  }
+  
+  #examples:after,
+  #examples:before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    background: none;
+    height: 16px;
+    z-index: 2;
+  }
+  
+  #examples-deep {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  #examples svg,
+  #examples canvas {
+    position: absolute;
+  }
+  
+  /* Set the border colour of the hexagons */
+  .example-mesh {
+    fill: none;
+    stroke: var(--outline-colour);
+    stroke-width: var(--outline-weight);
+  }
+  
+  .example-anchor path {
+    fill: none;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  /* Set border colour of selected hexagon */
+  .example-anchor path:hover {
+    stroke: var(--hover-colour);
+    stroke-width: var(--hover-weight);
+  }
