@@ -97,7 +97,7 @@ if __name__ == '__main__':
     print(test_hex.get_weather_duration())
     print(test_hex.get_current_hum())
     print(test_hex.get_current_temp())
-    print(test_hex.get_surrounding_humidity())
+    #print(test_hex.get_surrounding_humidity())
 
     test_hex2.get_humidity()
     test_hex2.get_current_temp()
