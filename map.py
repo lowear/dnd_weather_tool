@@ -5,22 +5,20 @@
 class Map():
     """Defines the map and all its children"""
 
-    def __init__(self, name, file_path, horizontal, vertical):
+    def __init__(self, name, file_path, hex):
         """The main map and its file location
         
         arg:
             name(str) = name of the map
             file_path(str) = image of map
-            horizontal(int) = horizontal position of the hex on the screen
-            vertical(int) = vertical position of the hex on the screen
+            hex = list of hexes
         
         return:
             (Map) = returm the world map"""
         
         self.name = name
         self.file_path = file_path
-        self.horizontal = horizontal
-        self.vertical = vertical
+        self.hex = hex
 
     def add_hex(self, name, horizontal, vertical):
         """To define the location of the hexes in the screen
