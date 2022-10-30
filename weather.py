@@ -3,7 +3,7 @@
 class Weather():
     """defines all the available weathers"""
 
-    def __init__(self, name, min_duration, max_duration, temp_modifier, humidity_modifier, icon_filepath):
+    def __init__(self, name, min_duration, max_duration, temp_modifier, humidity_modifier, icon_filepath=None):
         """containes all referances to all the information kept with all individual weather options
         
         arg:
@@ -25,8 +25,7 @@ class Weather():
         self.humidity_modifier = humidity_modifier
         self.icon_filepath = icon_filepath
 
-        raise NotImplementedError
 
 if __name__ == '__main__':
-    test_hex = Weather("mountain", 2, 6, 5, 30, "test")
+    test_weather = Weather("mountain", 2, 6, 5, 30, "test")
     
